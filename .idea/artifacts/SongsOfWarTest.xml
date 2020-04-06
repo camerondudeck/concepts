@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SongsOfWarTest">
+    <output-path>$PROJECT_DIR$/../../Server 1.15.2/plugins</output-path>
+    <root id="archive" name="SongsOfWarTest.jar">
+      <element id="module-output" name="SongsOfWar" />
+    </root>
+  </artifact>
+</component>

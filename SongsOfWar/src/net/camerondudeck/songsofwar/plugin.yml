@@ -1,0 +1,6 @@
+name: SongsOfWar
+version: 1.0
+description: Songs Of War Minecraft Plugin
+authors: [tcsRoses]
+main: net.camerondudeck.songsofwar.SOW
+api-version: 1.15
