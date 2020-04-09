@@ -1,7 +1,10 @@
 package net.camerondudeck.songsofwar;
 
 import lombok.Getter;
+import net.camerondudeck.songsofwar.commands.GetSong;
 import net.camerondudeck.songsofwar.gui.GuiManager;
+import net.camerondudeck.songsofwar.listeners.FallDamageListener;
+import net.camerondudeck.songsofwar.listeners.SongUseListener;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandMap;
 import org.bukkit.plugin.SimplePluginManager;
@@ -21,6 +24,11 @@ public class SOW extends JavaPlugin {
 		instance = this;
 
 		this.guiManager = new GuiManager();
+
+		registerCommand(new GetSong());
+
+		this.getServer().getPluginManager().registerEvents(new SongUseListener(), this);
+		this.getServer().getPluginManager().registerEvents(new FallDamageListener(), this);
 	}
 
 	public static void registerCommand(CommandBase command) {
